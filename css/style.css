@@ -1,0 +1,239 @@
+@import url('variables.css');
+
+body {
+    background-color: var(--color-2);
+    margin: 0;
+    padding: 0;
+    display: grid;
+    height: 3911px;
+    width: 100vw;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 2px;
+    grid-template-areas:
+        "section1"
+        "section2"
+        "section2"
+        "section3"
+        "section3";
+}
+/*======================section1=========================*/
+.section1 {
+    grid-area: section1;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2px;
+    grid-template-areas:
+        "header header header header header"
+        "crae crae crae deck deck"
+        "crae crae crae deck deck"
+        "crae crae crae deck deck"
+        "crae crae crae deck deck"
+        "crae crae crae deck deck";
+}
+
+/*==================*/
+.header {
+    grid-area: header;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+}
+/*======*/
+.aqua0 {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    height: 96px;
+    width: 202px;
+    border-radius: 48px;
+    justify-content: center;
+    align-items: center;
+}
+.aqua {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color-1);
+    height: 96px;
+    width: 298px;
+    left: -48px;
+    border-radius: 48px;
+    justify-content: center;
+    align-items: center;
+}
+.aqua h3 {
+    height: auto;
+    width: auto;
+    margin: 0;
+    font-family: "Robot-Regular";
+    font-size: 48px;
+    align-content: center;
+}
+.aqua img {
+    height: 45px;
+    width: 46px;
+}
+/*======*/
+.menu {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color-2);
+    height: 96px;
+    width: 50%;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 2px solid var(--color-3);
+}
+.menu button {
+    height: auto;
+    width: auto;
+    margin: 0;
+    font-family: "Robot-Bold";
+    font-size: 24px;
+    color: var(--color-1);
+    align-content: center;
+    border: none;
+}
+.menu button:nth-child(1) {
+    background-color: var(--color-2);
+}
+.menu button:nth-child(2) {
+    background-color: var(--color-2);
+}
+.menu button:nth-child(3) {
+    background-color: transparent;
+}
+.menu button:nth-child(4) {
+    background-color: transparent;
+}
+/*======*/
+.mode {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--color-2);
+    margin-right: 50px;
+    height: 50px;
+    width: 100px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+/*==================*/
+.crae {
+    grid-area: crae;
+    margin-left: 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+.crae div {
+    margin-top: 5%;
+}
+.crae h2 {
+    margin: 0;
+    font-family: "Robot-Regular";
+    color: var(--color-1);
+    font-size: 56.4px;
+}
+.crae p {
+    margin: 0;
+    font-family: "Robot-Bold";
+    color: var(--color-1);
+    font-size: 26px;
+    width: 685px;
+}
+
+/*==================*/
+.deck {
+    grid-area: deck;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 80px;
+}
+.deck .img-cont {
+    background-color: transparent;
+}
+.deck .img-cont img {
+    background-color: transparent;
+}
+.deck button {
+    height: 59px;
+    width: 249px;
+    margin: 0;
+    font-family: "Robot-Bold";
+    font-size: 40px;
+    color: var(--color-2);
+    background-color: var(--color-1);
+    align-content: center;
+    border-radius: 31.5px;
+    border: none;
+}
+.social {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 218px;
+    width: 82px;
+    bottom: 100px;
+    right: 40px;
+    background-color: var(--color-2);
+    justify-content: space-around;
+    align-items: center;
+}
+.social img {
+    width: 50px;
+    height: 50px;
+}
+
+
+/*======================section2=========================*/
+
+.section2 {
+    grid-area: section2;
+    display: flex;
+    flex-direction: column;
+
+}
+.section2 h1 {
+    margin: 0;
+    font-family: "Robot-Bold";
+    color: var(--color-1);
+    font-size: 64px;
+}
+.section2 p {
+    margin: 0;
+    font-family: "Robot-Regular";
+    color: var(--color-1);
+    font-size: 36px;
+}
+.section2 div {
+    display: flex;
+    flex-direction: row;
+}
+.section2 div h2 {
+    margin: 0;
+    font-family: "Robot-Regular";
+    color: var(--color-1);
+    font-size: 28px;
+}
+
+/*======================section3=========================*/
+
+.section3 {
+    grid-area: section3;
+}
